@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Simple HTML Page</title>
+		<style>
+			:root {
+				color-scheme: light dark;
+			}
+			body {
+				font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+				margin: 0;
+				padding: 2rem;
+				line-height: 1.5;
+			}
+			.card {
+				max-width: 720px;
+				margin: 0 auto;
+				padding: 1.5rem;
+				border: 1px solid #ccc;
+				border-radius: 12px;
+			}
+			button {
+				padding: 0.5rem 1rem;
+				border-radius: 8px;
+				border: 1px solid #888;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="card">
+			<h1>Welcome</h1>
+			<p>This is a simple HTML file for your project.</p>
+			<button id="helloBtn">Say hello</button>
+		</div>
+
+		<script>
+			document.getElementById("helloBtn").addEventListener("click", function () {
+				alert("Hello!");
+			});
+		</script>
+	</body>
+</html>
